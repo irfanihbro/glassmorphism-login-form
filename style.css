@@ -112,7 +112,7 @@ a:hover {
 
 .label {
     position: absolute;
-    top: 17px;
+    top: 15px;
     left: 20px;
     font-size: 16px;
     color: var(--second-color);
