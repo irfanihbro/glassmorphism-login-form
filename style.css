@@ -72,7 +72,7 @@ a:hover {
     left: -30px;
     position: absolute;
     border-top-right-radius: 50%;
-    width: 30x;
+    width: 30px;
     height: 30px;
     box-shadow: 15px 0 0 0 var(--primary-color);
     background: transparent;
@@ -107,21 +107,20 @@ a:hover {
     border-radius: 30px;
     border: 2px solid var(--primary-color);
     outline: none;
-}
-
-#user {
-    margin-bottom: 10px;
+    transition: 0.3s;
 }
 
 .label {
     position: absolute;
-    transition: 0.2s;
-    top: 15px;
+    top: 17px;
     left: 20px;
+    font-size: 16px;
+    color: var(--second-color);
+    transition: 0.3s;
 }
 
 .input_field:focus ~ .label,
-.input_field:valid .label {
+.input_field:valid ~ .label {
     position: absolute;
     font-size: 14px;
     top: -10px;
@@ -159,6 +158,8 @@ a:hover {
 
 .input-submit:hover {
     background: var(--second-color);
+    transform: scale(1.05);
+    background-color: var(--primary-color);
 }
 
 .signup {
@@ -169,7 +170,7 @@ a:hover {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 564px){
+@media only screen and (max-width: 564px) {
     .container {
         padding: 20px;
     }
@@ -177,4 +178,17 @@ a:hover {
     .login_container {
         padding: 7.5em 1.5em 4em 1.5em;
     }
+}
+
+#password {
+    padding-right: 50px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 18px;
+    right: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
