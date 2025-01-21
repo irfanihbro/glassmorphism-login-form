@@ -8,6 +8,7 @@
     --second-color: #b9b9b9;
     --primary-color: #b5b5b5;
     --black-color: #020101;
+    --tertiary-color: #ffffff;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 a {
@@ -109,6 +109,11 @@ a:hover {
     border: 2px solid var(--primary-color);
     outline: none;
     transition: 0.3s;
+}
+
+.input_field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px var(--tertiary-color)
 }
 
 .label {
